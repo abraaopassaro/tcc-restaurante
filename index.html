@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pré-TCC</title>
+  <link rel="icon" href="imagens/WhatsApp Image 2026-03-18 at 17.06.38.jpeg" type ="image/x-icon">
+
+  <!-- LINK DO CSS EXTERNO -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- CAPA ABNT -->
+  <div class="slide active">
+    <p>Etec de Embu das Artes</p>
+
+    <br><br>
+
+    <p>Cícero Abraão<br>
+    Fernando
+    <br>Patrick
+    <br>Tamires </p>
+
+    <br><br>
+
+    <h1>APRESENTAÇÃO DE PRÉ-TCC</h1>
+
+    <p><strong>Sistema de Reservas de Mesas e Controle de Fila de Espera em Restaurantes</strong></p>
+
+    <br><br>
+
+    <p>Grupo: Coringa Solution</p>
+
+    <br>
+
+    <p>Orientador: Prof.Wilhelm Klaus<br>Prof.Emerson Silva</p>
+
+    <br><br>
+
+    <p>Embu das Artes - SP<br>2026</p>
+  </div>
+
+  <!-- TEMA -->
+  <div class="slide">
+    <h1>Tema</h1>
+    <p>Sistema para gerenciar reservas e fila de espera em restaurantes.</p>
+  </div>
+
+  <!-- PROBLEMA -->
+  <div class="slide">
+    <h1>Problema</h1>
+    <p>Falta de organização nas filas</p>
+    <p>Tempo de espera elevado</p>
+    <p>Perda de clientes</p>
+  </div>
+
+  <!-- OBJETIVO -->
+  <div class="slide">
+    <h1>Objetivo</h1>
+    <p>Gerenciar reservas de mesas</p>
+    <p>Controlar fila de espera</p>
+    <p>Melhorar atendimento</p>
+  </div>
+
+  <!-- DESIGN -->
+  <div class="slide">
+    <h1>Protótipo do Sistema</h1>
+    <img src="imagens/Captura de tela 2026-03-18 173609.png" width="500" alt="Design">
+      <img src="imagens/Captura de tela 2026-03-18 173639.png" width="500" alt="Design">
+    <p>Interface do sistema</p>
+  </div> 
+  <!-- BANCO DE DADOS -->
+  <div class="slide">
+    <h1>Banco de Dados</h1>
+    <img src="imagens/imagem.jpeg" width="200" alt="Banco de dados">
+    <p>Estrutura das tabelas</p>
+  </div>
+
+  <!-- FUNCIONAMENTO -->
+  <div class="slide">
+    <h1>Funcionamento</h1>
+    <p>Usuário faz a reserva</p>
+    <p>Dados são enviados ao banco</p>
+    <p>Sistema organiza a fila</p>
+  </div>
+
+  <!-- TECNOLOGIAS -->
+  <div class="slide">
+    <h1>Tecnologias</h1>
+    <p>HTML</p>
+    <p>CSS</p>
+    <p>JavaScript/!!!Node.js!!!</p>
+    <p>Banco de Dados SQL</p>
+  </div>
+
+
+  <!-- FINAL -->
+  <div class="slide">
+    <h1>Considerações Finais</h1>
+    <p>Projeto em desenvolvimento</p>
+    <p>Próximo passo: integração do sistema</p>
+  </div>
+
+  <button id="prev">⬅</button>
+  <button id="next">➡</button>
+
+  <script>
+    let slides = document.querySelectorAll('.slide');
+    let index = 0;
+
+    document.getElementById('next').onclick = () => {
+      slides[index].classList.remove('active');
+      index = (index + 1) % slides.length;
+      slides[index].classList.add('active');
+    };
+
+    document.getElementById('prev').onclick = () => {
+      slides[index].classList.remove('active');
+      index = (index - 1 + slides.length) % slides.length;
+      slides[index].classList.add('active');
+    };
+  </script>
+
+</body>
+</html>
+

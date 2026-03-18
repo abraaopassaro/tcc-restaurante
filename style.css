@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #111;
+  color: #fff;
+}
+
+.slide {
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* centraliza horizontal */
+  text-align: center;
+  padding: 40px;
+}
+
+.active {
+  display: flex;
+}
+
+h1 {
+  color: orange;
+  font-size: 36px;
+}
+
+.tema {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.topo {
+  position: absolute;
+  top: 20px;
+}
+
+.rodape {
+  position: absolute;
+  bottom: 20px;
+}
+
+p {
+  margin: 8px;
+}
+
+/* 🔥 IMAGEM AJUSTADA */
+.img-projeto {
+  width: 60%;           /* tamanho médio */
+  max-width: 600px;     /* limite máximo */
+  display: block;
+  margin: 20px auto;    /* centraliza */
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+button {
+  position: fixed;
+  bottom: 20px;
+  padding: 10px 20px;
+  background: orange;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#next { right: 20px; }
+#prev { left: 20px; }
